@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 300 300">
+
+<defs>
+
+<linearGradient id="wing"
+
+x1="0%"
+y1="0%"
+
+x2="100%"
+y2="100%">
+
+<stop offset="0%"
+stop-color="#ffffff"/>
+
+<stop offset="45%"
+stop-color="#f8f8ff"/>
+
+<stop offset="100%"
+stop-color="#dfe8ff"/>
+
+</linearGradient>
+
+<linearGradient id="body"
+
+x1="0%"
+y1="0%"
+
+x2="0%"
+y2="100%">
+
+<stop offset="0%"
+stop-color="#5a4636"/>
+
+<stop offset="100%"
+stop-color="#2f241d"/>
+
+</linearGradient>
+
+<radialGradient id="glow">
+
+<stop offset="0%"
+stop-color="#ffffff"
+stop-opacity=".9"/>
+
+<stop offset="100%"
+stop-color="#ffffff"
+stop-opacity="0"/>
+
+</radialGradient>
+
+</defs>
+
+<!-- Fairy Glow -->
+
+<circle
+
+cx="150"
+
+cy="150"
+
+r="95"
+
+fill="url(#glow)"/>
+
+<!-- Body -->
+
+<ellipse
+
+cx="150"
+
+cy="150"
+
+rx="8"
+
+ry="58"
+
+fill="url(#body)"/>
+
+<!-- Head -->
+
+<circle
+
+cx="150"
+
+cy="88"
+
+r="10"
+
+fill="url(#body)"/>
+
+<!-- Left Upper Wing -->
+
+<path
+
+d="
+
+M145 120
+
+C55 35 20 150 118 170
+
+C135 160 145 145 145 120
+
+"
+
+fill="url(#wing)"
+
+stroke="#f0f0f0"
+
+stroke-width="2"/>
+
+<!-- Right Upper Wing -->
+
+<path
+
+d="
+
+M155 120
+
+C245 35 280 150 182 170
+
+C165 160 155 145 155 120
+
+"
+
+fill="url(#wing)"
+
+stroke="#f0f0f0"
+
+stroke-width="2"/>
+
+<!-- Left Lower Wing -->
+
+<path
+
+d="
+
+M145 175
+
+C75 190 70 275 145 235
+
+"
+
+fill="url(#wing)"
+
+stroke="#f0f0f0"
+
+stroke-width="2"/>
+
+<!-- Right Lower Wing -->
+
+<path
+
+d="
+
+M155 175
+
+C225 190 230 275 155 235
+
+"
+
+fill="url(#wing)"
+
+stroke="#f0f0f0"
+
+stroke-width="2"/>
+
+<!-- Antenna -->
+
+<path
+
+d="
+
+M147 84
+
+Q132 52 118 40
+
+"
+
+fill="none"
+
+stroke="#4b3d33"
+
+stroke-width="2"/>
+
+<path
+
+d="
+
+M153 84
+
+Q168 52 182 40
+
+"
+
+fill="none"
+
+stroke="#4b3d33"
+
+stroke-width="2"/>
+
+<circle
+
+cx="118"
+
+cy="40"
+
+r="2.5"
+
+fill="#4b3d33"/>
+
+<circle
+
+cx="182"
+
+cy="40"
+
+r="2.5"
+
+fill="#4b3d33"/>
+<!-- ==========================================
+     PART 15
+     PREMIUM WING DETAILS
+========================================== -->
+
+<!-- Left Upper Wing Pattern -->
+<path
+d="
+M130 108
+C92 82 66 110 90 142
+C108 136 120 125 130 108
+"
+fill="#ffffff"
+opacity=".35"/>
+
+<!-- Right Upper Wing Pattern -->
+<path
+d="
+M170 108
+C208 82 234 110 210 142
+C192 136 180 125 170 108
+"
+fill="#ffffff"
+opacity=".35"/>
+
+<!-- Left Lower Wing Pattern -->
+<path
+d="
+M138 188
+C112 198 104 220 128 228
+"
+fill="#ffffff"
+opacity=".30"/>
+
+<!-- Right Lower Wing Pattern -->
+<path
+d="
+M162 188
+C188 198 196 220 172 228
+"
+fill="#ffffff"
+opacity=".30"/>
+
+<!-- Wing Veins -->
+<g
+stroke="#d9e6ff"
+stroke-width="1"
+fill="none"
+opacity=".45">
+
+<path d="M145 120 L92 95"/>
+<path d="M145 120 L72 132"/>
+<path d="M145 120 L110 158"/>
+
+<path d="M155 120 L208 95"/>
+<path d="M155 120 L228 132"/>
+<path d="M155 120 L190 158"/>
+
+<path d="M145 175 L118 220"/>
+<path d="M155 175 L182 220"/>
+
+</g>
+
+<!-- Crystal Highlights -->
+<circle
+cx="102"
+cy="108"
+r="2.5"
+fill="#ffffff"/>
+
+<circle
+cx="198"
+cy="108"
+r="2.5"
+fill="#ffffff"/>
+
+<circle
+cx="126"
+cy="214"
+r="2"
+fill="#ffffff"/>
+
+<circle
+cx="174"
+cy="214"
+r="2"
+fill="#ffffff"/>
+
+<!-- Dew Drops -->
+<ellipse
+cx="84"
+cy="126"
+rx="2"
+ry="3"
+fill="#eafcff"
+opacity=".85"/>
+
+<ellipse
+cx="216"
+cy="126"
+rx="2"
+ry="3"
+fill="#eafcff"
+opacity=".85"/>
+
+<!-- Fairy Sparkles -->
+<circle
+cx="60"
+cy="84"
+r="1.5"
+fill="#fff7b0"/>
+
+<circle
+cx="240"
+cy="84"
+r="1.5"
+fill="#fff7b0"/>
+
+<circle
+cx="150"
+cy="32"
+r="1.5"
+fill="#ffffff"/>
+
+<!-- Soft Glow -->
+<ellipse
+cx="150"
+cy="150"
+rx="115"
+ry="100"
+fill="#ffffff"
+opacity=".03"/>
+</svg>
