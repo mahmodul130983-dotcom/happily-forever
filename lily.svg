@@ -1,0 +1,577 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 180 340">
+
+<defs>
+
+<linearGradient id="stem"
+x1="0%"
+y1="0%"
+x2="0%"
+y2="100%">
+
+<stop offset="0%" stop-color="#66d77a"/>
+<stop offset="100%" stop-color="#2f8f4d"/>
+
+</linearGradient>
+
+<linearGradient id="leaf">
+
+<stop offset="0%" stop-color="#6fdc7f"/>
+<stop offset="100%" stop-color="#2b8b4b"/>
+
+</linearGradient>
+
+<radialGradient id="petal">
+
+<stop offset="0%" stop-color="#ffffff"/>
+
+<stop offset="65%" stop-color="#fbfbfb"/>
+
+<stop offset="100%" stop-color="#ececec"/>
+
+</radialGradient>
+
+<radialGradient id="glow">
+
+<stop offset="0%"
+stop-color="#ffffff"
+stop-opacity=".9"/>
+
+<stop offset="100%"
+stop-color="#ffffff"
+stop-opacity="0"/>
+
+</radialGradient>
+
+</defs>
+
+<!-- Glow -->
+
+<circle
+
+cx="90"
+
+cy="82"
+
+r="70"
+
+fill="url(#glow)"/>
+
+<!-- Stem -->
+
+<rect
+
+x="87"
+
+y="105"
+
+width="6"
+
+height="185"
+
+rx="3"
+
+fill="url(#stem)"/>
+
+<!-- Leaves -->
+
+<path
+
+d="
+
+M90 175
+
+C55 150 42 188 74 205
+
+C82 198 88 188 90 175
+
+"
+
+fill="url(#leaf)"/>
+
+<path
+
+d="
+
+M90 210
+
+C132 185 142 222 106 240
+
+C98 232 92 221 90 210
+
+"
+
+fill="url(#leaf)"/>
+
+<!-- Center -->
+
+<circle
+
+cx="90"
+
+cy="86"
+
+r="9"
+
+fill="#e8b72d"/>
+
+<!-- Petals -->
+
+<ellipse
+
+cx="90"
+
+cy="36"
+
+rx="20"
+
+ry="52"
+
+fill="url(#petal)"
+
+transform="rotate(0 90 86)"/>
+
+<ellipse
+
+cx="90"
+
+cy="36"
+
+rx="20"
+
+ry="52"
+
+fill="url(#petal)"
+
+transform="rotate(60 90 86)"/>
+
+<ellipse
+
+cx="90"
+
+cy="36"
+
+rx="20"
+
+ry="52"
+
+fill="url(#petal)"
+
+transform="rotate(120 90 86)"/>
+
+<ellipse
+
+cx="90"
+
+cy="36"
+
+rx="20"
+
+ry="52"
+
+fill="url(#petal)"
+
+transform="rotate(180 90 86)"/>
+
+<ellipse
+
+cx="90"
+
+cy="36"
+
+rx="20"
+
+ry="52"
+
+fill="url(#petal)"
+
+transform="rotate(240 90 86)"/>
+
+<ellipse
+
+cx="90"
+
+cy="36"
+
+rx="20"
+
+ry="52"
+
+fill="url(#petal)"
+
+transform="rotate(300 90 86)"/>
+
+<!-- Pollen -->
+
+<line
+
+x1="90"
+
+y1="86"
+
+x2="82"
+
+y2="62"
+
+stroke="#d89b12"
+
+stroke-width="2"/>
+
+<circle
+
+cx="82"
+
+cy="61"
+
+r="2"
+
+fill="#ffb800"/>
+
+<line
+
+x1="90"
+
+y1="86"
+
+x2="98"
+
+y2="62"
+
+stroke="#d89b12"
+
+stroke-width="2"/>
+
+<circle
+
+cx="98"
+
+cy="61"
+
+r="2"
+
+fill="#ffb800"/>
+
+<line
+
+x1="90"
+
+y1="86"
+
+x2="90"
+
+y2="58"
+
+stroke="#d89b12"
+
+stroke-width="2"/>
+
+<circle
+
+cx="90"
+
+cy="57"
+
+r="2"
+
+fill="#ffb800"/>
+<!-- ==========================================
+     PART 7
+     PREMIUM LILY DETAILS
+========================================== -->
+
+<!-- Soft Inner Petals -->
+<ellipse
+cx="90"
+cy="54"
+rx="12"
+ry="34"
+fill="#ffffff"
+opacity=".65"
+transform="rotate(30 90 86)"/>
+
+<ellipse
+cx="90"
+cy="54"
+rx="12"
+ry="34"
+fill="#ffffff"
+opacity=".65"
+transform="rotate(90 90 86)"/>
+
+<ellipse
+cx="90"
+cy="54"
+rx="12"
+ry="34"
+fill="#ffffff"
+opacity=".65"
+transform="rotate(150 90 86)"/>
+
+<!-- Petal Highlights -->
+<path
+d="M90 38
+Q94 55 90 72"
+stroke="#ffffff"
+stroke-width="2"
+stroke-linecap="round"
+opacity=".7"/>
+
+<path
+d="M72 58
+Q82 68 88 82"
+stroke="#ffffff"
+stroke-width="1.5"
+stroke-linecap="round"
+opacity=".55"/>
+
+<path
+d="M108 58
+Q98 68 92 82"
+stroke="#ffffff"
+stroke-width="1.5"
+stroke-linecap="round"
+opacity=".55"/>
+
+<!-- Dew Drops -->
+<circle
+cx="70"
+cy="62"
+r="2.4"
+fill="#ffffff"
+opacity=".85"/>
+
+<circle
+cx="114"
+cy="70"
+r="2"
+fill="#ffffff"
+opacity=".8"/>
+
+<circle
+cx="90"
+cy="45"
+r="1.8"
+fill="#ffffff"
+opacity=".9"/>
+
+<!-- Small Glow -->
+<circle
+cx="90"
+cy="86"
+r="18"
+fill="#fff8d8"
+opacity=".22"/>
+
+<!-- Firefly Reflection -->
+<circle
+cx="122"
+cy="48"
+r="1.5"
+fill="#fff7a8"/>
+
+<circle
+cx="58"
+cy="82"
+r="1.2"
+fill="#fff7a8"/>
+
+<!-- Extra Leaves -->
+<path
+d="
+M90 238
+C58 222 52 250 82 264
+"
+fill="#3ba75d"
+opacity=".92"/>
+
+<path
+d="
+M90 258
+C122 240 130 270 100 282
+"
+fill="#2f9a55"
+opacity=".92"/>
+
+<!-- Stem Highlight -->
+<rect
+x="88"
+y="105"
+width="1.5"
+height="185"
+fill="#bdf8c5"
+opacity=".55"/>
+
+<!-- Romantic Sparkles -->
+<circle
+cx="52"
+cy="40"
+r="1.3"
+fill="#ffffff"/>
+
+<circle
+cx="128"
+cy="32"
+r="1.3"
+fill="#ffffff"/>
+
+<circle
+cx="142"
+cy="86"
+r="1.2"
+fill="#fff9c7"/>
+
+<circle
+cx="38"
+cy="96"
+r="1.2"
+fill="#fff9c7"/>
+  <!-- ==========================================
+     PART 8
+     ULTRA REALISTIC LILY FINISH
+========================================== -->
+
+<!-- Petal Veins -->
+<g opacity=".28" stroke="#d9d9d9" stroke-width=".8" fill="none">
+
+<path d="M90 18 Q90 42 90 72"/>
+
+<path d="M58 50 Q74 62 88 82"/>
+
+<path d="M122 50 Q106 62 92 82"/>
+
+<path d="M60 118 Q76 102 90 88"/>
+
+<path d="M120 118 Q104 102 90 88"/>
+
+<path d="M90 154 Q90 122 90 96"/>
+
+</g>
+
+<!-- Golden Center -->
+
+<circle
+cx="90"
+cy="86"
+r="10"
+fill="#F6C443"/>
+
+<circle
+cx="90"
+cy="86"
+r="5"
+fill="#FFF3B5"/>
+
+<!-- Long Stamens -->
+
+<g stroke="#D18B00" stroke-width="2" stroke-linecap="round">
+
+<line x1="90" y1="86" x2="75" y2="55"/>
+<line x1="90" y1="86" x2="90" y2="50"/>
+<line x1="90" y1="86" x2="105" y2="55"/>
+<line x1="90" y1="86" x2="68" y2="72"/>
+<line x1="90" y1="86" x2="112" y2="72"/>
+
+</g>
+
+<!-- Pollen -->
+
+<circle cx="75" cy="54" r="2.5" fill="#FFB400"/>
+<circle cx="90" cy="49" r="2.5" fill="#FFB400"/>
+<circle cx="105" cy="54" r="2.5" fill="#FFB400"/>
+<circle cx="68" cy="72" r="2.2" fill="#FFB400"/>
+<circle cx="112" cy="72" r="2.2" fill="#FFB400"/>
+
+<!-- Dew Drops -->
+
+<ellipse
+cx="64"
+cy="80"
+rx="3"
+ry="5"
+fill="#ffffff"
+opacity=".72"/>
+
+<ellipse
+cx="117"
+cy="94"
+rx="2.8"
+ry="4.8"
+fill="#ffffff"
+opacity=".68"/>
+
+<ellipse
+cx="90"
+cy="34"
+rx="2.5"
+ry="4"
+fill="#ffffff"
+opacity=".78"/>
+
+<!-- Reflection -->
+
+<ellipse
+cx="63"
+cy="78"
+rx="1"
+ry="2"
+fill="#9fe8ff"/>
+
+<ellipse
+cx="116"
+cy="92"
+rx="1"
+ry="2"
+fill="#9fe8ff"/>
+
+<!-- Stem Shine -->
+
+<rect
+x="89"
+y="105"
+width="1"
+height="185"
+fill="#E6FFD8"
+opacity=".65"/>
+
+<!-- Extra Leaf Highlights -->
+
+<path
+d="M90 176 Q72 188 60 196"
+stroke="#b7ffd0"
+stroke-width="1.5"
+fill="none"
+opacity=".45"/>
+
+<path
+d="M90 212 Q108 224 120 232"
+stroke="#b7ffd0"
+stroke-width="1.5"
+fill="none"
+opacity=".45"/>
+
+<!-- Moon Glow -->
+
+<circle
+cx="90"
+cy="86"
+r="60"
+fill="#ffffff"
+opacity=".05"/>
+
+<!-- Floating Sparkles -->
+
+<circle cx="36" cy="38" r="1.5" fill="#FFFCEC"/>
+<circle cx="145" cy="44" r="1.5" fill="#FFFCEC"/>
+<circle cx="150" cy="112" r="1.2" fill="#FFFCEC"/>
+<circle cx="28" cy="120" r="1.2" fill="#FFFCEC"/>
+
+<!-- Soft Shadow -->
+
+<ellipse
+cx="90"
+cy="300"
+rx="26"
+ry="6"
+fill="#000000"
+opacity=".12"/>
+</svg>
