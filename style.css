@@ -1899,3 +1899,723 @@ rotate(8deg);
 50%{
 
 transform
+/* ==========================================
+   PART 11
+   ROMANTIC CENTER SCENE
+========================================== */
+
+/* ===========================
+   LOVE SECTION
+=========================== */
+
+#loveScene{
+
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+width:700px;
+height:500px;
+
+pointer-events:none;
+
+z-index:60;
+
+}
+
+/* ===========================
+   HEART GLOW
+=========================== */
+
+#heartGlow{
+
+position:absolute;
+
+left:50%;
+top:58%;
+
+transform:translate(-50%,-50%);
+
+width:340px;
+height:340px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+
+rgba(255,255,255,.20),
+
+rgba(255,180,220,.08),
+
+transparent 75%
+
+);
+
+filter:blur(25px);
+
+animation:
+
+heartGlow 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+   LILY HEART
+=========================== */
+
+#lilyHeart{
+
+position:absolute;
+
+left:50%;
+top:54%;
+
+transform:translate(-50%,-50%);
+
+width:280px;
+height:250px;
+
+background:
+
+radial-gradient(circle,
+
+rgba(255,255,255,.08),
+
+transparent 72%);
+
+}
+
+/* ===========================
+   MESSAGE
+=========================== */
+
+#loveMessage{
+
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:translateX(-50%);
+
+text-align:center;
+
+color:white;
+
+text-shadow:
+
+0 0 12px rgba(255,255,255,.7);
+
+}
+
+#loveMessage h1{
+
+font-size:46px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:#ffffff;
+
+}
+
+#loveMessage h2{
+
+margin-top:18px;
+
+font-size:22px;
+
+font-weight:300;
+
+color:#ffe8f3;
+
+}
+
+#loveMessage p{
+
+margin-top:18px;
+
+font-size:18px;
+
+line-height:32px;
+
+color:#fefefe;
+
+max-width:600px;
+
+}
+
+/* ===========================
+   FLOATING HEARTS
+=========================== */
+
+.floatingHeart{
+
+position:absolute;
+
+font-size:24px;
+
+color:#ff8dbb;
+
+opacity:.7;
+
+animation:
+
+floatHeart 8s linear infinite;
+
+text-shadow:
+
+0 0 10px #ffb7d6;
+
+}
+
+.floatingHeart:nth-child(1){
+
+left:20%;
+
+bottom:15%;
+
+animation-delay:0s;
+
+}
+
+.floatingHeart:nth-child(2){
+
+left:50%;
+
+bottom:8%;
+
+animation-delay:2s;
+
+}
+
+.floatingHeart:nth-child(3){
+
+left:72%;
+
+bottom:12%;
+
+animation-delay:4s;
+
+}
+
+/* ===========================
+   MOON RAYS
+=========================== */
+
+.moonRay{
+
+position:absolute;
+
+top:-40px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:500px;
+
+height:700px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(255,255,255,.16),
+
+transparent
+
+);
+
+clip-path:
+
+polygon(
+
+46% 0,
+
+54% 0,
+
+100% 100%,
+
+0 100%
+
+);
+
+opacity:.25;
+
+filter:blur(16px);
+
+}
+
+/* ===========================
+   FAIRY DUST
+=========================== */
+
+.fairyDust{
+
+position:absolute;
+
+width:4px;
+
+height:4px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:
+
+0 0 12px white,
+
+0 0 24px white;
+
+animation:
+
+dust 5s ease-in-out infinite;
+
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes heartGlow{
+
+0%,100%{
+
+transform:
+
+translate(-50%,-50%)
+
+scale(1);
+
+opacity:.9;
+
+}
+
+50%{
+
+transform:
+
+translate(-50%,-50%)
+
+scale(1.08);
+
+opacity:1;
+
+}
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:
+
+translateY(0)
+
+scale(.8);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:.8;
+
+}
+
+80%{
+
+opacity:.8;
+
+}
+
+100%{
+
+transform:
+
+translateY(-220px)
+
+scale(1.4);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes dust{
+
+0%{
+
+transform:translateY(0);
+
+opacity:.2;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-80px);
+
+opacity:0;
+
+}
+
+}
+   /* ==========================================
+   PART 12
+   CINEMATIC FINALE
+========================================== */
+
+/* ===============================
+   FALLING PETALS
+=============================== */
+
+#petals{
+
+position:fixed;
+
+inset:0;
+
+overflow:hidden;
+
+pointer-events:none;
+
+z-index:120;
+
+}
+
+.petal{
+
+position:absolute;
+
+top:-60px;
+
+width:22px;
+
+height:30px;
+
+background:
+
+radial-gradient(circle at 35% 30%,
+#ffffff,
+#f6f6f6 70%,
+#e7e7e7);
+
+border-radius:
+
+70% 70% 70% 10%;
+
+opacity:.92;
+
+box-shadow:
+
+0 0 12px rgba(255,255,255,.35);
+
+animation:
+
+petalFall linear infinite;
+
+}
+
+.petal:nth-child(odd){
+
+animation-duration:13s;
+
+}
+
+.petal:nth-child(even){
+
+animation-duration:16s;
+
+}
+
+/* ===============================
+   MAGIC WIND
+=============================== */
+
+#garden{
+
+animation:
+
+gardenWind 8s ease-in-out infinite;
+
+}
+
+/* ===============================
+   FAIRY SHIMMER
+=============================== */
+
+#garden::before{
+
+animation:
+
+fairyLight 6s ease-in-out infinite;
+
+}
+
+/* ===============================
+   CINEMATIC VIGNETTE
+=============================== */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+background:
+
+radial-gradient(circle,
+
+transparent 55%,
+
+rgba(0,0,0,.18) 85%,
+
+rgba(0,0,0,.38) 100%
+
+);
+
+z-index:999;
+
+}
+
+/* ===============================
+   MOON SHIMMER
+=============================== */
+
+#moon{
+
+animation:
+
+moonFloat 8s ease-in-out infinite;
+
+}
+
+#moonGlow{
+
+animation:
+
+moonPulse 6s ease-in-out infinite;
+
+}
+
+/* ===============================
+   LOVE TEXT GLOW
+=============================== */
+
+#loveMessage h1{
+
+animation:
+
+loveGlow 3.5s ease-in-out infinite;
+
+}
+
+#loveMessage h2{
+
+animation:
+
+subtitleGlow 5s ease-in-out infinite;
+
+}
+
+/* ===============================
+   GARDEN DEPTH
+=============================== */
+
+#garden{
+
+filter:
+
+contrast(105%)
+
+brightness(103%)
+
+saturate(108%);
+
+}
+
+/* ===============================
+   ANIMATIONS
+=============================== */
+
+@keyframes petalFall{
+
+0%{
+
+transform:
+
+translateY(-50px)
+
+translateX(0)
+
+rotate(0deg);
+
+opacity:0;
+
+}
+
+10%{
+
+opacity:1;
+
+}
+
+50%{
+
+transform:
+
+translateY(55vh)
+
+translateX(35px)
+
+rotate(180deg);
+
+}
+
+100%{
+
+transform:
+
+translateY(115vh)
+
+translateX(-50px)
+
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes gardenWind{
+
+0%,100%{
+
+transform:translateX(0);
+
+}
+
+50%{
+
+transform:translateX(3px);
+
+}
+
+}
+
+@keyframes fairyLight{
+
+0%,100%{
+
+opacity:1;
+
+}
+
+50%{
+
+opacity:.86;
+
+}
+
+}
+
+@keyframes moonFloat{
+
+0%,100%{
+
+transform:
+
+translateY(0);
+
+}
+
+50%{
+
+transform:
+
+translateY(-6px);
+
+}
+
+}
+
+@keyframes moonPulse{
+
+0%,100%{
+
+opacity:.92;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+}
+
+@keyframes loveGlow{
+
+0%,100%{
+
+text-shadow:
+
+0 0 12px white,
+
+0 0 22px rgba(255,255,255,.6);
+
+}
+
+50%{
+
+text-shadow:
+
+0 0 25px white,
+
+0 0 55px rgba(255,255,255,.9);
+
+}
+
+}
+
+@keyframes subtitleGlow{
+
+0%,100%{
+
+opacity:.8;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+}
