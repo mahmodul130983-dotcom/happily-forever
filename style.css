@@ -1538,4 +1538,364 @@ transform:translateX(-3%);
 }
 
 }
+/* ==========================================
+   PART 10
+   FAIRY GARDEN DECORATIONS
+========================================== */
 
+/* ===============================
+   BUTTERFLIES
+=============================== */
+
+#butterflies{
+
+position:absolute;
+
+inset:0;
+
+pointer-events:none;
+
+z-index:30;
+
+}
+
+.butterfly{
+
+position:absolute;
+
+width:42px;
+
+height:42px;
+
+animation:
+
+butterflyFly 14s linear infinite;
+
+filter:
+
+drop-shadow(0 0 10px rgba(255,255,255,.45));
+
+}
+
+.butterfly:nth-child(1){
+
+left:12%;
+top:45%;
+
+animation-delay:0s;
+
+}
+
+.butterfly:nth-child(2){
+
+left:72%;
+top:30%;
+
+animation-delay:4s;
+
+}
+
+.butterfly:nth-child(3){
+
+left:48%;
+top:58%;
+
+animation-delay:8s;
+
+}
+
+/* ===============================
+   FIREFLIES
+=============================== */
+
+#fireflies{
+
+position:absolute;
+
+inset:0;
+
+pointer-events:none;
+
+z-index:25;
+
+}
+
+.firefly{
+
+position:absolute;
+
+width:6px;
+
+height:6px;
+
+border-radius:50%;
+
+background:#fff6a2;
+
+box-shadow:
+
+0 0 10px #fff8bd,
+
+0 0 20px #fff3a2,
+
+0 0 35px #fff7b8;
+
+animation:
+
+fireflyMove 12s linear infinite,
+
+fireflyBlink 2s ease-in-out infinite;
+
+}
+
+/* ===============================
+   SPARKLES
+=============================== */
+
+.sparkle{
+
+position:absolute;
+
+width:3px;
+
+height:3px;
+
+border-radius:50%;
+
+background:#ffffff;
+
+box-shadow:
+
+0 0 10px white;
+
+animation:
+
+sparkle 3s ease-in-out infinite;
+
+}
+
+/* ===============================
+   MOON BEAM
+=============================== */
+
+#moonBeam{
+
+position:absolute;
+
+top:130px;
+
+right:165px;
+
+width:220px;
+
+height:700px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(255,255,255,.22),
+
+rgba(255,255,255,.05),
+
+transparent
+
+);
+
+clip-path:
+
+polygon(
+
+46% 0,
+
+54% 0,
+
+100% 100%,
+
+0 100%
+
+);
+
+filter:blur(10px);
+
+opacity:.35;
+
+pointer-events:none;
+
+}
+
+/* ===============================
+   FAIRY GLOW
+=============================== */
+
+#fairyGlow{
+
+position:absolute;
+
+left:50%;
+
+bottom:140px;
+
+transform:translateX(-50%);
+
+width:700px;
+
+height:220px;
+
+background:
+
+radial-gradient(
+
+ellipse,
+
+rgba(255,255,255,.10),
+
+transparent 70%
+
+);
+
+filter:blur(25px);
+
+}
+
+/* ===============================
+   BUSHES
+=============================== */
+
+.bush{
+
+position:absolute;
+
+bottom:60px;
+
+width:120px;
+
+height:70px;
+
+border-radius:70px;
+
+background:
+
+radial-gradient(
+
+circle at top,
+
+#3f8f55,
+
+#18482d
+
+);
+
+}
+
+.bush.left{
+
+left:80px;
+
+}
+
+.bush.right{
+
+right:80px;
+
+}
+
+/* ===============================
+   FERN
+=============================== */
+
+.fern{
+
+position:absolute;
+
+bottom:45px;
+
+width:80px;
+
+height:100px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#5ab36c,
+
+#2d7d45
+
+);
+
+clip-path:
+
+polygon(
+
+50% 0,
+
+60% 18%,
+
+72% 36%,
+
+58% 54%,
+
+74% 72%,
+
+50% 100%,
+
+26% 72%,
+
+42% 54%,
+
+28% 36%,
+
+40% 18%
+
+);
+
+opacity:.82;
+
+}
+
+.fern.left{
+
+left:180px;
+
+}
+
+.fern.right{
+
+right:180px;
+
+}
+
+/* ===============================
+   ANIMATIONS
+=============================== */
+
+@keyframes butterflyFly{
+
+0%{
+
+transform:
+
+translate(-80px,40px)
+
+rotate(-10deg);
+
+}
+
+25%{
+
+transform:
+
+translate(180px,-60px)
+
+rotate(8deg);
+
+}
+
+50%{
+
+transform
