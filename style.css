@@ -1,0 +1,909 @@
+/* ==========================================
+   PART 2
+   MOONLIGHT SKY
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    font-family:'Poppins',sans-serif;
+
+    background:#020814;
+
+}
+
+body{
+
+    position:relative;
+
+}
+
+/* ==========================================
+   SKY
+========================================== */
+
+#sky{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    background:
+
+    radial-gradient(circle at top,
+    #17345f 0%,
+    #102748 18%,
+    #0b1d37 38%,
+    #071224 62%,
+    #030811 100%);
+
+}
+
+/* ==========================================
+   MOON GLOW
+========================================== */
+
+#moonGlow{
+
+    position:absolute;
+
+    top:55px;
+
+    right:140px;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+    rgba(255,255,255,.65) 0%,
+    rgba(255,255,255,.22) 35%,
+    rgba(180,220,255,.08) 70%,
+    transparent 100%);
+
+    filter:blur(20px);
+
+    animation:moonGlow 6s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   MOON
+========================================== */
+
+#moon{
+
+    position:absolute;
+
+    top:85px;
+
+    right:175px;
+
+    width:145px;
+
+    height:145px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle at 30% 30%,
+    #ffffff,
+    #f6f6f6 45%,
+    #dddddd 100%);
+
+    box-shadow:
+
+    0 0 20px #fff,
+
+    0 0 60px rgba(255,255,255,.8),
+
+    0 0 120px rgba(210,235,255,.4);
+
+}
+
+/* Moon texture */
+
+#moon::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    background:#d9d9d9;
+
+    top:35px;
+
+    left:35px;
+
+    opacity:.45;
+
+}
+
+#moon::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#d4d4d4;
+
+    bottom:28px;
+
+    right:30px;
+
+    opacity:.35;
+
+}
+
+/* ==========================================
+   STARS
+========================================== */
+
+#stars{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(white 1px,transparent 1px),
+
+    radial-gradient(#ffffff 1px,transparent 1px),
+
+    radial-gradient(#d9f4ff 1px,transparent 1px);
+
+    background-size:
+
+    120px 120px,
+
+    190px 190px,
+
+    260px 260px;
+
+    animation:
+
+    starsMove 80s linear infinite,
+
+    starsBlink 4s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   CLOUDS
+========================================== */
+
+#clouds{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+#clouds::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+
+    height:120px;
+
+    top:110px;
+
+    left:-600px;
+
+    border-radius:60px;
+
+    background:
+
+    rgba(255,255,255,.05);
+
+    filter:blur(20px);
+
+    animation:cloudMove 70s linear infinite;
+
+}
+
+#clouds::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:90px;
+
+    top:170px;
+
+    left:-450px;
+
+    border-radius:50px;
+
+    background:
+
+    rgba(255,255,255,.04);
+
+    filter:blur(18px);
+
+    animation:cloudMove2 90s linear infinite;
+
+}
+
+/* ==========================================
+   PARTICLES
+========================================== */
+
+#particles{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes moonGlow{
+
+0%,100%{
+
+transform:scale(1);
+
+opacity:.95;
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+opacity:1;
+
+}
+
+}
+
+@keyframes starsBlink{
+
+0%,100%{
+
+opacity:.95;
+
+}
+
+50%{
+
+opacity:.55;
+
+}
+
+}
+
+@keyframes starsMove{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-250px);
+
+}
+
+}
+
+@keyframes cloudMove{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(1800px);
+
+}
+
+}
+
+@keyframes cloudMove2{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(1900px);
+
+}
+
+}
+/* ==========================================
+   PART 3
+   FAIRY GARDEN
+========================================== */
+
+/* ===============================
+   GARDEN
+================================ */
+
+#garden{
+
+position:absolute;
+
+left:0;
+right:0;
+bottom:0;
+
+width:100%;
+height:58vh;
+
+overflow:hidden;
+
+z-index:5;
+
+}
+
+/* ===============================
+   BACK GROUND
+================================ */
+
+#garden::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+right:0;
+bottom:0;
+
+width:100%;
+height:100%;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+transparent 0%,
+
+rgba(22,70,48,.15) 20%,
+
+#173d29 55%,
+
+#0d291b 100%
+
+);
+
+}
+
+/* ===============================
+   MOON LIGHT
+================================ */
+
+#garden::after{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+transform:translateX(-50%);
+
+bottom:0;
+
+width:1200px;
+
+height:420px;
+
+background:
+
+radial-gradient(
+
+ellipse,
+
+rgba(255,255,255,.09),
+
+transparent 72%
+
+);
+
+pointer-events:none;
+
+}
+
+/* ===============================
+   BACK GRASS
+================================ */
+
+#backGrass{
+
+position:absolute;
+
+left:0;
+bottom:0;
+
+width:100%;
+height:190px;
+
+background:
+
+repeating-linear-gradient(
+
+90deg,
+
+#215d39 0px,
+
+#215d39 4px,
+
+#2d7347 5px,
+
+#2d7347 8px
+
+);
+
+clip-path:
+
+polygon(
+
+0 100%,
+
+2% 80%,
+
+4% 100%,
+
+6% 74%,
+
+8% 100%,
+
+10% 78%,
+
+12% 100%,
+
+14% 72%,
+
+16% 100%,
+
+18% 75%,
+
+20% 100%,
+
+22% 70%,
+
+24% 100%,
+
+26% 77%,
+
+28% 100%,
+
+30% 74%,
+
+32% 100%,
+
+34% 68%,
+
+36% 100%,
+
+38% 73%,
+
+40% 100%,
+
+42% 70%,
+
+44% 100%,
+
+46% 76%,
+
+48% 100%,
+
+50% 70%,
+
+52% 100%,
+
+54% 76%,
+
+56% 100%,
+
+58% 72%,
+
+60% 100%,
+
+62% 74%,
+
+64% 100%,
+
+66% 70%,
+
+68% 100%,
+
+70% 78%,
+
+72% 100%,
+
+74% 73%,
+
+76% 100%,
+
+78% 69%,
+
+80% 100%,
+
+82% 74%,
+
+84% 100%,
+
+86% 70%,
+
+88% 100%,
+
+90% 75%,
+
+92% 100%,
+
+94% 72%,
+
+96% 100%,
+
+98% 78%,
+
+100% 100%
+
+);
+
+animation:
+
+grassMove 5s ease-in-out infinite;
+
+}
+
+/* ===============================
+   FRONT GRASS
+================================ */
+
+.frontGrass{
+
+position:absolute;
+
+bottom:0;
+
+width:100%;
+height:120px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#31784c,
+
+#18472d
+
+);
+
+clip-path:
+
+polygon(
+
+0 100%,
+
+1% 55%,
+
+2% 100%,
+
+3% 40%,
+
+4% 100%,
+
+5% 52%,
+
+6% 100%,
+
+7% 35%,
+
+8% 100%,
+
+9% 45%,
+
+10% 100%,
+
+100% 100%
+
+);
+
+opacity:.95;
+
+}
+
+/* ===============================
+   FOG
+================================ */
+
+#fog{
+
+position:absolute;
+
+left:-10%;
+
+bottom:60px;
+
+width:120%;
+
+height:120px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.08),
+
+transparent
+
+);
+
+filter:blur(18px);
+
+animation:
+
+fogMove 22s linear infinite;
+
+}
+
+/* ===============================
+   TREES
+================================ */
+
+.tree{
+
+position:absolute;
+
+bottom:135px;
+
+width:170px;
+
+height:330px;
+
+opacity:.88;
+
+}
+
+.tree-left{
+
+left:0;
+
+background:
+
+radial-gradient(
+
+ellipse at bottom,
+
+#112918,
+
+#08140d
+
+);
+
+clip-path:
+
+polygon(
+
+45% 0%,
+
+55% 0%,
+
+58% 18%,
+
+76% 35%,
+
+68% 52%,
+
+88% 72%,
+
+74% 100%,
+
+26% 100%,
+
+12% 72%,
+
+32% 52%,
+
+24% 35%,
+
+42% 18%
+
+);
+
+}
+
+.tree-right{
+
+right:0;
+
+background:
+
+radial-gradient(
+
+ellipse at bottom,
+
+#112918,
+
+#08140d
+
+);
+
+clip-path:
+
+polygon(
+
+45% 0%,
+
+55% 0%,
+
+58% 18%,
+
+76% 35%,
+
+68% 52%,
+
+88% 72%,
+
+74% 100%,
+
+26% 100%,
+
+12% 72%,
+
+32% 52%,
+
+24% 35%,
+
+42% 18%
+
+);
+
+}
+
+/* ===============================
+   STONE PATH
+================================ */
+
+#stonePath{
+
+position:absolute;
+
+left:50%;
+
+transform:translateX(-50%);
+
+bottom:0;
+
+width:260px;
+
+height:240px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(255,255,255,.06),
+
+rgba(255,255,255,.01)
+
+);
+
+clip-path:
+
+polygon(
+
+45% 0,
+
+55% 0,
+
+75% 100%,
+
+25% 100%
+
+);
+
+opacity:.45;
+
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+
+@keyframes grassMove{
+
+0%,100%{
+
+transform:translateX(0);
+
+}
+
+50%{
+
+transform:translateX(6px);
+
+}
+
+}
+
+@keyframes fogMove{
+
+0%{
+
+transform:translateX(-6%);
+
+}
+
+50%{
+
+transform:translateX(6%);
+
+}
+
+100%{
+
+transform:translateX(-6%);
+
+}
+
+}
