@@ -1,0 +1,1241 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 420 720">
+
+<defs>
+
+<linearGradient id="skin"
+x1="0%" y1="0%"
+x2="0%" y2="100%">
+
+<stop offset="0%" stop-color="#FFDCCB"/>
+<stop offset="100%" stop-color="#F2B89A"/>
+
+</linearGradient>
+
+<linearGradient id="hair"
+x1="0%" y1="0%"
+x2="0%" y2="100%">
+
+<stop offset="0%" stop-color="#4A2E22"/>
+<stop offset="100%" stop-color="#24140F"/>
+
+</linearGradient>
+
+<linearGradient id="dress"
+x1="0%" y1="0%"
+x2="100%" y2="100%">
+
+<stop offset="0%" stop-color="#FFF8FC"/>
+<stop offset="40%" stop-color="#FFE3EF"/>
+<stop offset="100%" stop-color="#F8BFD5"/>
+
+</linearGradient>
+
+<radialGradient id="glow">
+
+<stop offset="0%"
+stop-color="#FFFFFF"
+stop-opacity=".45"/>
+
+<stop offset="100%"
+stop-color="#FFFFFF"
+stop-opacity="0"/>
+
+</radialGradient>
+
+</defs>
+
+<!-- Fairy Glow -->
+
+<circle
+cx="210"
+cy="250"
+r="170"
+fill="url(#glow)"/>
+
+<!-- Ground Shadow -->
+
+<ellipse
+cx="210"
+cy="690"
+rx="70"
+ry="15"
+fill="#000000"
+opacity=".10"/>
+
+<!-- Neck -->
+
+<rect
+x="196"
+y="175"
+width="28"
+height="34"
+rx="12"
+fill="url(#skin)"/>
+
+<!-- Face -->
+
+<ellipse
+cx="210"
+cy="120"
+rx="54"
+ry="62"
+fill="url(#skin)"/>
+
+<!-- Left Ear -->
+
+<circle
+cx="156"
+cy="126"
+r="8"
+fill="url(#skin)"/>
+
+<!-- Right Ear -->
+
+<circle
+cx="264"
+cy="126"
+r="8"
+fill="url(#skin)"/>
+
+<!-- Long Hair -->
+
+<path
+d="
+M150 92
+C150 28 270 28 270 96
+L282 250
+Q210 300 138 250
+Z"
+fill="url(#hair)"/>
+
+<!-- Hair Bangs -->
+
+<path
+d="
+M162 86
+C182 56 238 56 258 86
+C244 76 226 70 210 70
+C194 70 176 76 162 86
+"
+fill="#362117"/>
+
+<!-- Dress -->
+
+<path
+d="
+M150 205
+L270 205
+L315 575
+L105 575
+Z"
+fill="url(#dress)"/>
+
+<!-- Left Arm -->
+
+<rect
+x="125"
+y="220"
+width="22"
+height="135"
+rx="11"
+fill="url(#skin)"/>
+
+<!-- Right Arm -->
+
+<rect
+x="273"
+y="220"
+width="22"
+height="135"
+rx="11"
+fill="url(#skin)"/>
+
+<!-- Left Hand -->
+
+<circle
+cx="136"
+cy="360"
+r="11"
+fill="url(#skin)"/>
+
+<!-- Right Hand -->
+
+<circle
+cx="284"
+cy="360"
+r="11"
+fill="url(#skin)"/>
+
+<!-- Dress Bottom -->
+
+<ellipse
+cx="210"
+cy="575"
+rx="105"
+ry="20"
+fill="#F5C5D8"
+opacity=".45"/>
+  <!-- ==========================================
+     PART 2
+     CUTE FACE DETAILS
+========================================== -->
+
+<!-- Left Eyebrow -->
+<path
+d="
+M184 108
+Q194 102 204 106
+"
+fill="none"
+stroke="#3B2A22"
+stroke-width="2.4"
+stroke-linecap="round"/>
+
+<!-- Right Eyebrow -->
+<path
+d="
+M216 106
+Q226 102 236 108
+"
+fill="none"
+stroke="#3B2A22"
+stroke-width="2.4"
+stroke-linecap="round"/>
+
+<!-- Left Eye -->
+<ellipse
+cx="192"
+cy="132"
+rx="8"
+ry="11"
+fill="#2C1A15"/>
+
+<!-- Right Eye -->
+<ellipse
+cx="228"
+cy="132"
+rx="8"
+ry="11"
+fill="#2C1A15"/>
+
+<!-- Iris Highlights -->
+<circle
+cx="194"
+cy="128"
+r="2.2"
+fill="#FFFFFF"/>
+
+<circle
+cx="230"
+cy="128"
+r="2.2"
+fill="#FFFFFF"/>
+
+<!-- Tiny Eye Sparkles -->
+<circle
+cx="196"
+cy="136"
+r="1"
+fill="#FFFFFF"
+opacity=".9"/>
+
+<circle
+cx="232"
+cy="136"
+r="1"
+fill="#FFFFFF"
+opacity=".9"/>
+
+<!-- Nose -->
+<path
+d="
+M210 138
+Q207 148 211 154
+"
+fill="none"
+stroke="#D59A7F"
+stroke-width="1.6"
+stroke-linecap="round"/>
+
+<!-- Cute Smile -->
+<path
+d="
+M196 166
+Q210 176 224 166
+"
+fill="none"
+stroke="#C86478"
+stroke-width="2.3"
+stroke-linecap="round"/>
+
+<!-- Lower Lip -->
+<path
+d="
+M202 170
+Q210 174 218 170
+"
+fill="none"
+stroke="#F29CB3"
+stroke-width="1.2"
+opacity=".8"/>
+
+<!-- Cheek Blush -->
+<ellipse
+cx="170"
+cy="154"
+rx="12"
+ry="7"
+fill="#FFB7C9"
+opacity=".35"/>
+
+<ellipse
+cx="250"
+cy="154"
+rx="12"
+ry="7"
+fill="#FFB7C9"
+opacity=".35"/>
+
+<!-- Chin Highlight -->
+<ellipse
+cx="210"
+cy="176"
+rx="9"
+ry="3"
+fill="#FFFFFF"
+opacity=".18"/>
+
+<!-- Hair Shine -->
+<path
+d="
+M174 70
+Q210 50 246 70
+"
+fill="none"
+stroke="#7B5A49"
+stroke-width="3"
+opacity=".35"/>
+
+<!-- Small Hair Strands -->
+<path
+d="
+M170 92
+Q176 122 170 152
+"
+fill="none"
+stroke="#3C2418"
+stroke-width="1.2"
+opacity=".6"/>
+
+<path
+d="
+M250 92
+Q244 122 250 152
+"
+fill="none"
+stroke="#3C2418"
+stroke-width="1.2"
+opacity=".6"/>
+
+<!-- Fairy Face Glow -->
+<ellipse
+cx="210"
+cy="135"
+rx="72"
+ry="82"
+fill="#FFFFFF"
+opacity=".025"/>
+  <!-- ==========================================
+     PART 3
+     ELEGANT HAIR & PRINCESS DRESS
+========================================== -->
+
+<!-- Hair Back Layer -->
+<path
+d="
+M145 110
+Q130 220 145 360
+Q165 455 210 495
+Q255 455 275 360
+Q290 220 275 110
+"
+fill="#2B1913"
+opacity=".45"/>
+
+<!-- Left Hair Lock -->
+<path
+d="
+M165 110
+Q145 180 155 280
+Q165 330 185 365
+"
+fill="none"
+stroke="#3B241A"
+stroke-width="8"
+stroke-linecap="round"/>
+
+<!-- Right Hair Lock -->
+<path
+d="
+M255 110
+Q275 180 265 280
+Q255 330 235 365
+"
+fill="none"
+stroke="#3B241A"
+stroke-width="8"
+stroke-linecap="round"/>
+
+<!-- Hair Shine -->
+<path
+d="
+M180 68
+Q210 50 240 68
+"
+fill="none"
+stroke="#7A5B4B"
+stroke-width="4"
+opacity=".35"/>
+
+<!-- Dress Collar -->
+<path
+d="
+M180 205
+L210 228
+L240 205
+"
+fill="#FFFFFF"/>
+
+<!-- Dress Ribbon -->
+<ellipse
+cx="210"
+cy="235"
+rx="14"
+ry="8"
+fill="#F58CB3"/>
+
+<path
+d="
+M196 236
+L186 258
+L202 248
+Z"
+fill="#F58CB3"/>
+
+<path
+d="
+M224 236
+L234 258
+L218 248
+Z"
+fill="#F58CB3"/>
+
+<!-- Dress Highlights -->
+<path
+d="
+M170 225
+Q210 330 185 560
+"
+fill="none"
+stroke="#FFFFFF"
+stroke-width="3"
+opacity=".25"/>
+
+<path
+d="
+M250 225
+Q210 330 235 560
+"
+fill="none"
+stroke="#FFFFFF"
+stroke-width="3"
+opacity=".25"/>
+
+<!-- Dress Folds -->
+<path
+d="
+M150 250
+Q175 390 160 570
+"
+fill="none"
+stroke="#E7AFC7"
+stroke-width="2"/>
+
+<path
+d="
+M210 245
+Q210 390 210 575
+"
+fill="none"
+stroke="#E7AFC7"
+stroke-width="2"/>
+
+<path
+d="
+M270 250
+Q245 390 260 570
+"
+fill="none"
+stroke="#E7AFC7"
+stroke-width="2"/>
+
+<!-- Sleeve Details -->
+<ellipse
+cx="145"
+cy="228"
+rx="12"
+ry="18"
+fill="#FFF4F8"/>
+
+<ellipse
+cx="275"
+cy="228"
+rx="12"
+ry="18"
+fill="#FFF4F8"/>
+
+<!-- Fairy Glow -->
+<ellipse
+cx="210"
+cy="330"
+rx="125"
+ry="205"
+fill="#FFFFFF"
+opacity=".03"/>
+<!-- ==========================================
+     PART 4
+     LILY BOUQUET & PRINCESS DETAILS
+========================================== -->
+
+<!-- ===========================
+     LEFT HAND HOLDING BOUQUET
+=========================== -->
+
+<g id="bouquet">
+
+  <!-- Stems -->
+  <line x1="145" y1="355" x2="175" y2="265"
+        stroke="#49A95C"
+        stroke-width="3"/>
+
+  <line x1="145" y1="355" x2="185" y2="255"
+        stroke="#49A95C"
+        stroke-width="3"/>
+
+  <line x1="145" y1="355" x2="165" y2="245"
+        stroke="#49A95C"
+        stroke-width="3"/>
+
+  <!-- Lily 1 -->
+  <g transform="translate(175 260) scale(.65)">
+
+    <ellipse cx="0" cy="-12" rx="9" ry="18"
+             fill="#FFFFFF"/>
+
+    <ellipse cx="-12" cy="0" rx="9" ry="18"
+             transform="rotate(-60)"
+             fill="#FFFFFF"/>
+
+    <ellipse cx="12" cy="0" rx="9" ry="18"
+             transform="rotate(60)"
+             fill="#FFFFFF"/>
+
+    <circle cx="0" cy="0"
+            r="4"
+            fill="#FFD44D"/>
+
+  </g>
+
+  <!-- Lily 2 -->
+
+  <g transform="translate(185 250) scale(.55)">
+
+    <ellipse cx="0" cy="-12" rx="9" ry="18"
+             fill="#FFFFFF"/>
+
+    <ellipse cx="-12" cy="0" rx="9" ry="18"
+             transform="rotate(-60)"
+             fill="#FFFFFF"/>
+
+    <ellipse cx="12" cy="0" rx="9" ry="18"
+             transform="rotate(60)"
+             fill="#FFFFFF"/>
+
+    <circle cx="0" cy="0"
+            r="4"
+            fill="#FFD44D"/>
+
+  </g>
+
+  <!-- Lily 3 -->
+
+  <g transform="translate(165 240) scale(.52)">
+
+    <ellipse cx="0" cy="-12" rx="9" ry="18"
+             fill="#FFFFFF"/>
+
+    <ellipse cx="-12" cy="0" rx="9" ry="18"
+             transform="rotate(-60)"
+             fill="#FFFFFF"/>
+
+    <ellipse cx="12" cy="0" rx="9" ry="18"
+             transform="rotate(60)"
+             fill="#FFFFFF"/>
+
+    <circle cx="0" cy="0"
+            r="4"
+            fill="#FFD44D"/>
+
+  </g>
+
+</g>
+
+<!-- ===========================
+     BRACELET
+=========================== -->
+
+<circle
+cx="145"
+cy="344"
+r="7"
+fill="none"
+stroke="#F4D36A"
+stroke-width="2"/>
+
+<!-- ===========================
+     DRESS LACE
+=========================== -->
+
+<path
+d="
+M118 575
+Q210 600 302 575
+"
+fill="none"
+stroke="#FFFFFF"
+stroke-width="3"
+stroke-dasharray="4 4"
+opacity=".8"/>
+
+<!-- ===========================
+     SMALL FLOWER PETALS
+=========================== -->
+
+<circle
+cx="120"
+cy="170"
+r="2"
+fill="#FFD7E5"/>
+
+<circle
+cx="300"
+cy="190"
+r="2"
+fill="#FFD7E5"/>
+
+<circle
+cx="95"
+cy="250"
+r="2"
+fill="#FFF0F5"/>
+
+<circle
+cx="325"
+cy="280"
+r="2"
+fill="#FFF0F5"/>
+
+<!-- ===========================
+     FAIRY SPARKLES
+=========================== -->
+
+<g fill="#FFFFFF" opacity=".9">
+
+<circle cx="155" cy="80" r="1.5"/>
+
+<circle cx="260" cy="65" r="1.3"/>
+
+<circle cx="110" cy="300" r="1.2"/>
+
+<circle cx="305" cy="330" r="1.4"/>
+
+</g>
+
+<!-- ===========================
+     SOFT GLOW
+=========================== -->
+
+<ellipse
+cx="210"
+cy="320"
+rx="145"
+ry="250"
+fill="#FFFFFF"
+opacity=".02"/>
+  <!-- ==========================================
+     PART 5
+     PRINCESS ACCESSORIES
+========================================== -->
+
+<!-- ===========================
+     HAIR FLOWER
+=========================== -->
+
+<g id="hairFlower"
+   transform="translate(255 92)">
+
+    <circle
+        cx="0"
+        cy="0"
+        r="4"
+        fill="#FFD84D"/>
+
+    <ellipse
+        cx="0"
+        cy="-8"
+        rx="4"
+        ry="8"
+        fill="#FFFFFF"/>
+
+    <ellipse
+        cx="8"
+        cy="0"
+        rx="4"
+        ry="8"
+        transform="rotate(90)"
+        fill="#FFFFFF"/>
+
+    <ellipse
+        cx="0"
+        cy="8"
+        rx="4"
+        ry="8"
+        fill="#FFFFFF"/>
+
+    <ellipse
+        cx="-8"
+        cy="0"
+        rx="4"
+        ry="8"
+        transform="rotate(90)"
+        fill="#FFFFFF"/>
+
+</g>
+
+<!-- ===========================
+     PEARL EARRINGS
+=========================== -->
+
+<circle
+cx="160"
+cy="142"
+r="3"
+fill="#FDFDFD"/>
+
+<circle
+cx="260"
+cy="142"
+r="3"
+fill="#FDFDFD"/>
+
+<!-- ===========================
+     NECKLACE
+=========================== -->
+
+<path
+d="
+M185 205
+Q210 220 235 205
+"
+fill="none"
+stroke="#E8D37B"
+stroke-width="2"/>
+
+<circle
+cx="210"
+cy="218"
+r="4"
+fill="#FFE78A"/>
+
+<!-- ===========================
+     DRESS BOW
+=========================== -->
+
+<ellipse
+cx="198"
+cy="245"
+rx="8"
+ry="5"
+fill="#F48FB1"/>
+
+<ellipse
+cx="222"
+cy="245"
+rx="8"
+ry="5"
+fill="#F48FB1"/>
+
+<circle
+cx="210"
+cy="245"
+r="4"
+fill="#E85D8C"/>
+
+<!-- ===========================
+     DRESS SPARKLES
+=========================== -->
+
+<g
+fill="#FFFFFF"
+opacity=".75">
+
+<circle cx="170" cy="300" r="1.5"/>
+
+<circle cx="245" cy="340" r="1.4"/>
+
+<circle cx="195" cy="410" r="1.3"/>
+
+<circle cx="230" cy="470" r="1.5"/>
+
+</g>
+
+<!-- ===========================
+     PROPOSAL POSE
+=========================== -->
+
+<path
+d="
+M284 360
+Q295 345 305 330
+"
+fill="none"
+stroke="#E8B497"
+stroke-width="5"
+stroke-linecap="round"/>
+
+<circle
+cx="306"
+cy="327"
+r="8"
+fill="url(#skin)"/>
+
+<!-- ===========================
+     FAIRY GLOW
+=========================== -->
+
+<ellipse
+cx="210"
+cy="320"
+rx="165"
+ry="280"
+fill="#FFFFFF"
+opacity=".025"/>
+
+<!-- ===========================
+     MAGIC STARS
+=========================== -->
+
+<g
+stroke="#FFFFFF"
+stroke-width="1"
+opacity=".8">
+
+<path d="M120 110 L120 120"/>
+<path d="M115 115 L125 115"/>
+
+<path d="M300 140 L300 150"/>
+<path d="M295 145 L305 145"/>
+
+<path d="M210 45 L210 55"/>
+<path d="M205 50 L215 50"/>
+
+</g>
+  <!-- ==========================================
+     PART 6
+     ULTRA CUTE DETAILS
+========================================== -->
+
+<!-- ===========================
+     HAIR BACK SHADOW
+=========================== -->
+
+<path
+d="
+M145 95
+Q120 235 145 430
+Q170 515 210 545
+Q250 515 275 430
+Q300 235 275 95
+"
+fill="#1F120D"
+opacity=".22"/>
+
+<!-- ===========================
+     LEFT FLOWING HAIR
+=========================== -->
+
+<path
+d="
+M165 120
+Q145 205 150 320
+Q160 410 180 480
+"
+fill="none"
+stroke="#3B2419"
+stroke-width="10"
+stroke-linecap="round"/>
+
+<!-- RIGHT FLOWING HAIR -->
+
+<path
+d="
+M255 120
+Q275 205 270 320
+Q260 410 240 480
+"
+fill="none"
+stroke="#3B2419"
+stroke-width="10"
+stroke-linecap="round"/>
+
+<!-- Hair Highlights -->
+
+<path
+d="
+M182 78
+Q210 58 238 78
+"
+fill="none"
+stroke="#8D6B59"
+stroke-width="3"
+opacity=".45"/>
+
+<!-- ===========================
+     DRESS LAYERS
+=========================== -->
+
+<path
+d="
+M120 565
+Q210 610 300 565
+"
+fill="none"
+stroke="#FFD8E8"
+stroke-width="5"
+opacity=".7"/>
+
+<path
+d="
+M130 545
+Q210 585 290 545
+"
+fill="none"
+stroke="#FFE8F2"
+stroke-width="4"
+opacity=".8"/>
+
+<!-- ===========================
+     DRESS PEARLS
+=========================== -->
+
+<g fill="#FFFDFD">
+
+<circle cx="170" cy="280" r="2"/>
+<circle cx="190" cy="330" r="2"/>
+<circle cx="225" cy="375" r="2"/>
+<circle cx="245" cy="430" r="2"/>
+<circle cx="210" cy="500" r="2"/>
+
+</g>
+
+<!-- ===========================
+     GOLDEN TIARA
+=========================== -->
+
+<path
+d="
+M180 66
+Q210 45 240 66
+"
+fill="none"
+stroke="#F4D46A"
+stroke-width="3"/>
+
+<circle
+cx="210"
+cy="52"
+r="4"
+fill="#FFE58A"/>
+
+<circle
+cx="190"
+cy="61"
+r="2.5"
+fill="#FFE58A"/>
+
+<circle
+cx="230"
+cy="61"
+r="2.5"
+fill="#FFE58A"/>
+
+<!-- ===========================
+     FACE GLOW
+=========================== -->
+
+<ellipse
+cx="210"
+cy="140"
+rx="48"
+ry="58"
+fill="#FFFFFF"
+opacity=".08"/>
+
+<!-- ===========================
+     FLOATING PETALS
+=========================== -->
+
+<g opacity=".85">
+
+<ellipse
+cx="110"
+cy="170"
+rx="3"
+ry="6"
+fill="#FFD8E6"
+transform="rotate(-25 110 170)"/>
+
+<ellipse
+cx="305"
+cy="210"
+rx="3"
+ry="6"
+fill="#FFD8E6"
+transform="rotate(30 305 210)"/>
+
+<ellipse
+cx="150"
+cy="420"
+rx="3"
+ry="6"
+fill="#FFF3F7"
+transform="rotate(-15 150 420)"/>
+
+<ellipse
+cx="285"
+cy="470"
+rx="3"
+ry="6"
+fill="#FFF3F7"
+transform="rotate(20 285 470)"/>
+
+</g>
+
+<!-- ===========================
+     MAGIC FAIRY GLOW
+=========================== -->
+
+<ellipse
+cx="210"
+cy="340"
+rx="170"
+ry="300"
+fill="#FFFFFF"
+opacity=".018"/>
+  <!-- ==========================================
+     PART 7
+     FINAL FACE & PROPOSAL POSE
+========================================== -->
+
+<!-- Face Soft Highlight -->
+<ellipse
+cx="210"
+cy="128"
+rx="42"
+ry="48"
+fill="#FFFFFF"
+opacity=".12"/>
+
+<!-- Eye Lashes -->
+<path
+d="M182 124
+L178 118"
+
+stroke="#2A1B18"
+stroke-width="1.3"
+stroke-linecap="round"/>
+
+<path
+d="M188 122
+L184 116"
+
+stroke="#2A1B18"
+stroke-width="1.3"
+stroke-linecap="round"/>
+
+<path
+d="M238 124
+L242 118"
+
+stroke="#2A1B18"
+stroke-width="1.3"
+stroke-linecap="round"/>
+
+<path
+d="M232 122
+L236 116"
+
+stroke="#2A1B18"
+stroke-width="1.3"
+stroke-linecap="round"/>
+
+<!-- Extra Eye Shine -->
+
+<circle
+cx="196"
+cy="126"
+r="1.4"
+fill="#FFFFFF"/>
+
+<circle
+cx="232"
+cy="126"
+r="1.4"
+fill="#FFFFFF"/>
+
+<!-- Cute Blush -->
+
+<ellipse
+cx="172"
+cy="156"
+rx="14"
+ry="8"
+fill="#FFABC5"
+opacity=".35"/>
+
+<ellipse
+cx="248"
+cy="156"
+rx="14"
+ry="8"
+fill="#FFABC5"
+opacity=".35"/>
+
+<!-- Small Heart -->
+
+<path
+d="
+M210 182
+C206 175 196 176 196 186
+C196 194 210 202 210 202
+C210 202 224 194 224 186
+C224 176 214 175 210 182
+"
+fill="#FF5F8D"
+opacity=".8"/>
+
+<!-- Hair Decoration -->
+
+<circle
+cx="250"
+cy="95"
+r="3"
+fill="#FFE57A"/>
+
+<circle
+cx="258"
+cy="88"
+r="2"
+fill="#FFF4B5"/>
+
+<circle
+cx="242"
+cy="88"
+r="2"
+fill="#FFF4B5"/>
+
+<!-- Dress Sparkles -->
+
+<g fill="#FFFFFF" opacity=".85">
+
+<circle cx="165" cy="295" r="1.4"/>
+
+<circle cx="250" cy="330" r="1.5"/>
+
+<circle cx="185" cy="415" r="1.3"/>
+
+<circle cx="235" cy="470" r="1.5"/>
+
+<circle cx="210" cy="520" r="1.6"/>
+
+</g>
+
+<!-- Proposal Pose -->
+
+<g id="proposalPose">
+
+<path
+d="
+M282 330
+Q300 315 318 305
+"
+fill="none"
+stroke="url(#skin)"
+stroke-width="8"
+stroke-linecap="round"/>
+
+<circle
+cx="319"
+cy="304"
+r="9"
+fill="url(#skin)"/>
+
+</g>
+
+<!-- Fairy Aura -->
+
+<ellipse
+cx="210"
+cy="340"
+rx="180"
+ry="315"
+fill="#FFFFFF"
+opacity=".02"/>
+
+<!-- Floating Hearts -->
+
+<g opacity=".75">
+
+<path
+d="
+M105 110
+C102 104 94 105 94 113
+C94 120 105 127 105 127
+C105 127 116 120 116 113
+C116 105 108 104 105 110
+"
+fill="#FF7AA8"/>
+
+<path
+d="
+M312 145
+C309 139 301 140 301 148
+C301 155 312 162 312 162
+C312 162 323 155 323 148
+C323 140 315 139 312 145
+"
+fill="#FF7AA8"/>
+
+</g>
+
+<!-- Ground Light -->
+
+<ellipse
+cx="210"
+cy="680"
+rx="90"
+ry="18"
+fill="#FFF7FA"
+opacity=".18"/>
+</svg>
