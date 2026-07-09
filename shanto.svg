@@ -1,0 +1,402 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 400 700">
+
+<defs>
+
+<linearGradient id="skin"
+x1="0%" y1="0%"
+x2="0%" y2="100%">
+
+<stop offset="0%" stop-color="#F5C9A9"/>
+<stop offset="100%" stop-color="#E3A47E"/>
+
+</linearGradient>
+
+<linearGradient id="shirt"
+x1="0%" y1="0%"
+x2="100%" y2="100%">
+
+<stop offset="0%" stop-color="#ffffff"/>
+<stop offset="100%" stop-color="#dfe8f8"/>
+
+</linearGradient>
+
+<linearGradient id="pant"
+x1="0%" y1="0%"
+x2="0%" y2="100%">
+
+<stop offset="0%" stop-color="#2F4058"/>
+<stop offset="100%" stop-color="#162132"/>
+
+</linearGradient>
+
+</defs>
+
+<!-- Shadow -->
+<ellipse
+cx="200"
+cy="665"
+rx="70"
+ry="18"
+fill="#000000"
+opacity=".12"/>
+
+<!-- Neck -->
+<rect
+x="186"
+y="148"
+width="28"
+height="32"
+rx="10"
+fill="url(#skin)"/>
+
+<!-- Head -->
+<circle
+cx="200"
+cy="105"
+r="48"
+fill="url(#skin)"/>
+
+<!-- Hair -->
+<path
+d="
+M154 105
+C160 48 240 48 246 105
+C235 78 170 78 154 105
+"
+fill="#2A1E1B"/>
+
+<!-- Left Ear -->
+<circle
+cx="154"
+cy="108"
+r="8"
+fill="url(#skin)"/>
+
+<!-- Right Ear -->
+<circle
+cx="246"
+cy="108"
+r="8"
+fill="url(#skin)"/>
+
+<!-- Shirt -->
+<rect
+x="145"
+y="175"
+width="110"
+height="155"
+rx="22"
+fill="url(#shirt)"/>
+
+<!-- Left Arm -->
+<rect
+x="122"
+y="188"
+width="24"
+height="125"
+rx="12"
+fill="url(#skin)"/>
+
+<!-- Right Arm -->
+<rect
+x="254"
+y="188"
+width="24"
+height="125"
+rx="12"
+fill="url(#skin)"/>
+
+<!-- Pants -->
+<rect
+x="158"
+y="330"
+width="38"
+height="170"
+rx="16"
+fill="url(#pant)"/>
+
+<rect
+x="204"
+y="330"
+width="38"
+height="170"
+rx="16"
+fill="url(#pant)"/>
+
+<!-- Shoes -->
+<ellipse
+cx="177"
+cy="515"
+rx="22"
+ry="10"
+fill="#1A1A1A"/>
+
+<ellipse
+cx="223"
+cy="515"
+rx="22"
+ry="10"
+fill="#1A1A1A"/>
+  <!-- ==========================================
+     PART 18
+     FACE DETAILS & PREMIUM FINISH
+========================================== -->
+
+<!-- Hair Highlight -->
+<path
+d="M170 72
+C188 58 212 58 230 72"
+fill="none"
+stroke="#5a4339"
+stroke-width="3"
+opacity=".45"/>
+
+<!-- Eyebrows -->
+<path
+d="M178 96
+Q188 91 196 96"
+fill="none"
+stroke="#3a2a25"
+stroke-width="2.2"
+stroke-linecap="round"/>
+
+<path
+d="M204 96
+Q214 91 222 96"
+fill="none"
+stroke="#3a2a25"
+stroke-width="2.2"
+stroke-linecap="round"/>
+
+<!-- Eyes -->
+<ellipse
+cx="188"
+cy="108"
+rx="3.2"
+ry="4.2"
+fill="#2b1d18"/>
+
+<ellipse
+cx="212"
+cy="108"
+rx="3.2"
+ry="4.2"
+fill="#2b1d18"/>
+
+<!-- Eye Shine -->
+<circle
+cx="189"
+cy="107"
+r="0.9"
+fill="#ffffff"/>
+
+<circle
+cx="213"
+cy="107"
+r="0.9"
+fill="#ffffff"/>
+
+<!-- Nose -->
+<path
+d="M200 112
+Q198 122 201 127"
+fill="none"
+stroke="#c98d72"
+stroke-width="1.6"
+stroke-linecap="round"/>
+
+<!-- Smile -->
+<path
+d="M190 136
+Q200 144 210 136"
+fill="none"
+stroke="#9c4d4d"
+stroke-width="2.2"
+stroke-linecap="round"/>
+
+<!-- Cheek Blush -->
+<circle
+cx="176"
+cy="126"
+r="6"
+fill="#ffb3b3"
+opacity=".20"/>
+
+<circle
+cx="224"
+cy="126"
+r="6"
+fill="#ffb3b3"
+opacity=".20"/>
+
+<!-- Collar -->
+<path
+d="M170 176
+L200 198
+L230 176"
+fill="#eef5ff"/>
+
+<!-- Shirt Fold -->
+<line
+x1="200"
+y1="176"
+x2="200"
+y2="320"
+stroke="#d4dce8"
+stroke-width="2"
+opacity=".7"/>
+
+<!-- Sleeve Fold -->
+<line
+x1="145"
+y1="225"
+x2="170"
+y2="245"
+stroke="#d7e2ef"
+stroke-width="1.5"/>
+
+<line
+x1="255"
+y1="225"
+x2="230"
+y2="245"
+stroke="#d7e2ef"
+stroke-width="1.5"/>
+
+<!-- Shirt Highlights -->
+<ellipse
+cx="182"
+cy="220"
+rx="18"
+ry="48"
+fill="#ffffff"
+opacity=".16"/>
+
+<ellipse
+cx="218"
+cy="220"
+rx="18"
+ry="48"
+fill="#ffffff"
+opacity=".16"/>
+
+<!-- Shoe Highlights -->
+<ellipse
+cx="177"
+cy="512"
+rx="8"
+ry="2"
+fill="#666666"
+opacity=".5"/>
+
+<ellipse
+cx="223"
+cy="512"
+rx="8"
+ry="2"
+fill="#666666"
+opacity=".5"/>
+
+<!-- Soft Body Glow -->
+<ellipse
+cx="200"
+cy="300"
+rx="95"
+ry="220"
+fill="#ffffff"
+opacity=".025"/>
+  <!-- ==========================================
+     PART 19
+     PROPOSAL POSE
+========================================== -->
+
+<!-- Right Arm (Proposal Pose) -->
+<g id="proposalArm">
+
+  <rect
+      x="228"
+      y="210"
+      width="22"
+      height="95"
+      rx="11"
+      fill="url(#skin)"
+      transform="rotate(-38 228 210)"/>
+
+  <!-- Hand -->
+  <circle
+      cx="286"
+      cy="165"
+      r="10"
+      fill="url(#skin)"/>
+
+</g>
+
+<!-- Rose Anchor -->
+<g id="roseAnchor"
+   transform="translate(286 165) rotate(-25)">
+
+  <!-- Rose will be inserted here -->
+
+</g>
+
+<!-- Kneeling Left Leg -->
+<path
+d="
+M180 330
+Q165 390 150 445
+Q142 470 160 485
+L188 485
+Q176 448 182 390
+Q186 360 192 330
+Z"
+fill="url(#pant)"/>
+
+<!-- Kneeling Right Leg -->
+<path
+d="
+M212 330
+Q245 365 262 420
+Q270 445 285 455
+L310 455
+Q288 425 272 382
+Q255 342 232 330
+Z"
+fill="url(#pant)"/>
+
+<!-- Left Shoe -->
+<ellipse
+cx="174"
+cy="490"
+rx="24"
+ry="10"
+fill="#1a1a1a"/>
+
+<!-- Right Shoe -->
+<ellipse
+cx="306"
+cy="458"
+rx="22"
+ry="9"
+fill="#1a1a1a"/>
+
+<!-- Shirt Fold -->
+<path
+d="
+M170 255
+Q200 275 230 255"
+fill="none"
+stroke="#d9e5ef"
+stroke-width="2"
+opacity=".7"/>
+
+<!-- Soft Shadow -->
+<ellipse
+cx="220"
+cy="505"
+rx="95"
+ry="12"
+fill="#000000"
+opacity=".08"/>
+
+</svg>
