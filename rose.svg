@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 220 420">
+
+<defs>
+
+<linearGradient id="roseStem"
+x1="0%" y1="0%"
+x2="0%" y2="100%">
+
+<stop offset="0%" stop-color="#56c96d"/>
+<stop offset="100%" stop-color="#23793c"/>
+
+</linearGradient>
+
+<linearGradient id="rosePetal"
+x1="0%" y1="0%"
+x2="100%" y2="100%">
+
+<stop offset="0%" stop-color="#ff6b81"/>
+<stop offset="40%" stop-color="#ff2d55"/>
+<stop offset="100%" stop-color="#b1002b"/>
+
+</linearGradient>
+
+<radialGradient id="roseGlow">
+
+<stop offset="0%"
+stop-color="#ffb3c1"
+stop-opacity=".45"/>
+
+<stop offset="100%"
+stop-color="#ffb3c1"
+stop-opacity="0"/>
+
+</radialGradient>
+
+</defs>
+
+<!-- Glow -->
+
+<circle
+cx="110"
+cy="90"
+r="75"
+fill="url(#roseGlow)"/>
+
+<!-- Stem -->
+
+<rect
+x="107"
+y="110"
+width="6"
+height="250"
+rx="3"
+fill="url(#roseStem)"/>
+
+<!-- Leaves -->
+
+<path
+d="
+M110 230
+C55 210 45 255 95 270
+"
+fill="#3ba657"/>
+
+<path
+d="
+M110 265
+C165 245 175 290 125 305
+"
+fill="#3ba657"/>
+
+<!-- Rose Center -->
+
+<ellipse
+cx="110"
+cy="92"
+rx="16"
+ry="16"
+fill="#b1002b"/>
+
+<!-- Top Petal -->
+
+<path
+d="
+M110 52
+C84 58 78 88 100 102
+C108 108 112 108 120 102
+C142 88 136 58 110 52
+"
+fill="url(#rosePetal)"/>
+
+<!-- Left Petal -->
+
+<path
+d="
+M82 78
+C60 88 62 120 92 128
+C102 116 104 96 82 78
+"
+fill="url(#rosePetal)"/>
+
+<!-- Right Petal -->
+
+<path
+d="
+M138 78
+C160 88 158 120 128 128
+C118 116 116 96 138 78
+"
+fill="url(#rosePetal)"/>
+
+<!-- Bottom Petal -->
+
+<path
+d="
+M110 100
+C78 112 82 146 110 152
+C138 146 142 112 110 100
+"
+fill="url(#rosePetal)"/>
+
+<!-- Shadow -->
+
+<ellipse
+cx="110"
+cy="380"
+rx="26"
+ry="6"
+fill="#000000"
+opacity=".12"/>
+  <!-- ==========================================
+     PART 16B
+     PREMIUM ROSE DETAILS
+========================================== -->
+
+<!-- Inner Petals -->
+<path
+d="
+M110 72
+C100 76 98 90 108 96
+C118 90 120 76 110 72
+"
+fill="#ff8aa5"
+opacity=".9"/>
+
+<path
+d="
+M102 86
+C94 92 96 104 106 108
+"
+fill="#ff5f82"
+opacity=".85"/>
+
+<path
+d="
+M118 86
+C126 92 124 104 114 108
+"
+fill="#ff5f82"
+opacity=".85"/>
+
+<!-- Petal Highlights -->
+<ellipse
+cx="101"
+cy="74"
+rx="5"
+ry="2"
+fill="#ffffff"
+opacity=".45"/>
+
+<ellipse
+cx="119"
+cy="74"
+rx="5"
+ry="2"
+fill="#ffffff"
+opacity=".45"/>
+
+<!-- Dew Drops -->
+<ellipse
+cx="95"
+cy="112"
+rx="2"
+ry="3"
+fill="#dff8ff"
+opacity=".9"/>
+
+<ellipse
+cx="125"
+cy="104"
+rx="2"
+ry="3"
+fill="#dff8ff"
+opacity=".9"/>
+
+<!-- Stem Shine -->
+<rect
+x="109"
+y="112"
+width="1.2"
+height="245"
+fill="#d8ffd6"
+opacity=".6"/>
+
+<!-- Thorns -->
+<path
+d="M113 175 L121 180 L113 184Z"
+fill="#2d6f3f"/>
+
+<path
+d="M107 245 L99 250 L107 254Z"
+fill="#2d6f3f"/>
+
+<!-- Leaf Veins -->
+<path
+d="M110 230 Q85 242 70 250"
+fill="none"
+stroke="#d7ffd8"
+stroke-width="1"
+opacity=".5"/>
+
+<path
+d="M110 265 Q135 278 150 288"
+fill="none"
+stroke="#d7ffd8"
+stroke-width="1"
+opacity=".5"/>
+
+<!-- Fairy Sparkles -->
+<circle cx="70" cy="55" r="1.5" fill="#fff8c9"/>
+<circle cx="150" cy="45" r="1.5" fill="#fff8c9"/>
+<circle cx="110" cy="25" r="1.2" fill="#ffffff"/>
+
+<!-- Romantic Glow -->
+<ellipse
+cx="110"
+cy="90"
+rx="90"
+ry="85"
+fill="#ffccd8"
+opacity=".04"/>
+
+</svg>
