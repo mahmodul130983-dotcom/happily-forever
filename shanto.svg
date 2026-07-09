@@ -106,7 +106,17 @@ width="24"
 height="125"
 rx="12"
 fill="url(#skin)"/>
+<g id="roseHolder" transform="translate(286 165) rotate(-28)">
 
+    <!-- Rose Stem -->
+    <rect
+        x="-2"
+        y="0"
+        width="4"
+        height="95"
+        rx="2"
+        fill="#3FAF5A"/>
+</g>
 <!-- Pants -->
 <rect
 x="158"
