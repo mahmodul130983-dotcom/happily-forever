@@ -1,4 +1,414 @@
 /* ==========================================
+   PART 6
+   ROMANTIC GARDEN ENGINE
+========================================== */
+
+const fireflies =
+document.getElementById("fireflies");
+
+const petals =
+document.getElementById("petals");
+
+const garden =
+document.getElementById("garden");
+
+/* ==========================
+   RANDOM NUMBER
+========================== */
+
+function random(min,max){
+
+    return Math.random()*(max-min)+min;
+
+}
+
+/* ==========================
+   CREATE FIREFLIES
+========================== */
+
+function createFireflies(){
+
+    for(let i=0;i<35;i++){
+
+        const fly =
+        document.createElement("div");
+
+        fly.className =
+        "firefly";
+
+        fly.style.left =
+        random(0,100)+"%";
+
+        fly.style.top =
+        random(10,95)+"%";
+
+        fly.style.animationDelay =
+        random(0,8)+"s";
+
+        fly.style.animationDuration =
+        random(6,12)+"s";
+
+        fireflies.appendChild(fly);
+
+    }
+
+}
+
+/* ==========================
+   CREATE PETALS
+========================== */
+
+function createPetals(){
+
+    for(let i=0;i<40;i++){
+
+        const petal =
+        document.createElement("div");
+
+        petal.className =
+        "petal";
+
+        petal.style.left =
+        random(0,100)+"%";
+
+        petal.style.animationDuration =
+        random(8,16)+"s";
+
+        petal.style.animationDelay =
+        random(0,10)+"s";
+
+        petals.appendChild(petal);
+
+    }
+
+}
+
+/* ==========================
+   START GARDEN
+========================== */
+
+function startGarden(){
+
+    createFireflies();
+
+    createPetals();
+
+}
+
+window.addEventListener(
+
+"load",
+
+startGarden
+
+);
+/* ==========================================
+   PART 7
+   BUTTERFLIES + SHOOTING STARS
+========================================== */
+
+const butterflyContainer =
+document.getElementById("butterflies");
+
+function createButterflies(){
+
+    if(!butterflyContainer) return;
+
+    for(let i=0;i<6;i++){
+
+        const butterfly =
+        document.createElement("img");
+
+        butterfly.className =
+        "butterfly";
+
+        butterfly.src =
+        "assets/svg/butterfly.svg";
+
+        butterfly.style.left =
+        random(5,95)+"%";
+
+        butterfly.style.top =
+        random(20,80)+"%";
+
+        butterfly.style.animationDelay =
+        random(0,8)+"s";
+
+        butterfly.style.animationDuration =
+        random(10,18)+"s";
+
+        butterflyContainer.appendChild(
+            butterfly
+        );
+
+    }
+
+}
+
+/* ==========================
+   SHOOTING STAR
+========================== */
+
+function createShootingStar(){
+
+    const star =
+    document.createElement("div");
+
+    star.className =
+    "shooting-star";
+
+    star.style.left =
+    random(-20,60)+"vw";
+
+    star.style.top =
+    random(0,20)+"vh";
+
+    garden.appendChild(star);
+
+    setTimeout(()=>{
+
+        star.remove();
+
+    },9000);
+
+}
+
+/* ==========================
+   REPEAT SHOOTING STAR
+========================== */
+
+function startSkyEffects(){
+
+    createShootingStar();
+
+    setInterval(()=>{
+
+        createShootingStar();
+
+    },12000);
+
+}
+
+/* ==========================
+   START EXTRA EFFECTS
+========================== */
+
+createButterflies();
+
+startSkyEffects();
+/* ==========================================
+   PART 8
+   SHANTO PROPOSAL SEQUENCE
+========================================== */
+
+const shanto =
+document.getElementById("shanto");
+
+const sumu =
+document.getElementById("sumu");
+
+/* ==========================
+   WALK TO SUMU
+========================== */
+
+function walkToSumu(){
+
+    if(!shanto) return;
+
+    shanto.style.opacity="1";
+
+    shanto.style.left="58%";
+
+}
+
+/* ==========================
+   KNEEL DOWN
+========================== */
+
+function kneelDown(){
+
+    if(!shanto) return;
+
+    shanto.style.transition=
+    "left 2.5s ease, bottom .8s ease";
+
+    shanto.style.bottom="35px";
+
+}
+
+/* ==========================
+   SHOW ROSE
+========================== */
+
+function showRose(){
+
+    const rose=
+    shanto.contentDocument
+    ?.getElementById("roseHolder");
+
+    if(!rose) return;
+
+    rose.style.opacity="1";
+
+    rose.style.transform=
+    "translate(286px,165px) rotate(-28deg) scale(1.08)";
+
+}
+
+/* ==========================
+   SUMU REACTION
+========================== */
+
+function sumuReaction(){
+
+    if(!sumu) return;
+
+    sumu.style.transition=
+    "transform 1s ease";
+
+    sumu.style.transform=
+    "translateY(-10px) scale(1.03)";
+
+}
+
+/* ==========================
+   START PROPOSAL
+========================== */
+
+window.addEventListener("load",()=>{
+
+    setTimeout(walkToSumu,2500);
+
+    setTimeout(kneelDown,5200);
+
+    setTimeout(showRose,6200);
+
+    setTimeout(sumuReaction,7000);
+
+});
+/* ==========================================
+   PART 9
+   GRAND ROMANTIC FINALE
+========================================== */
+
+const message = document.createElement("div");
+
+message.id = "proposalMessage";
+
+message.innerHTML = `
+<h1>Will You Stay With Me Forever? ❤️</h1>
+<p>
+Every Lily reminds me of your purity,<br>
+Every Rajanigandha reminds me of your fragrance,<br>
+And every heartbeat whispers only your name...
+</p>
+`;
+
+document.body.appendChild(message);
+
+/* ==========================
+   MESSAGE STYLE
+========================== */
+
+Object.assign(message.style,{
+
+    position:"fixed",
+
+    top:"50%",
+
+    left:"50%",
+
+    transform:"translate(-50%,-50%) scale(.8)",
+
+    color:"#fff",
+
+    textAlign:"center",
+
+    fontFamily:"'Poppins',sans-serif",
+
+    textShadow:"0 0 25px rgba(255,255,255,.9)",
+
+    opacity:"0",
+
+    transition:"2s",
+
+    zIndex:"9999",
+
+    pointerEvents:"none"
+
+});
+
+/* ==========================
+   FLOATING HEARTS
+========================== */
+
+function createHeart(){
+
+    const heart=document.createElement("div");
+
+    heart.innerHTML="❤️";
+
+    heart.style.position="fixed";
+
+    heart.style.left=Math.random()*100+"vw";
+
+    heart.style.bottom="-40px";
+
+    heart.style.fontSize=(18+Math.random()*18)+"px";
+
+    heart.style.pointerEvents="none";
+
+    heart.style.zIndex="999";
+
+    heart.style.transition="6s linear";
+
+    document.body.appendChild(heart);
+
+    requestAnimationFrame(()=>{
+
+        heart.style.bottom="110vh";
+
+        heart.style.opacity="0";
+
+    });
+
+    setTimeout(()=>heart.remove(),6000);
+
+}
+
+/* ==========================
+   SHOW MESSAGE
+========================== */
+
+function romanticEnding(){
+
+    message.style.opacity="1";
+
+    message.style.transform=
+    "translate(-50%,-50%) scale(1)";
+
+    const interval=setInterval(createHeart,300);
+
+    setTimeout(()=>{
+
+        clearInterval(interval);
+
+    },12000);
+
+}
+
+/* ==========================
+   START ENDING
+========================== */
+
+setTimeout(
+
+romanticEnding,
+
+9500
+
+);
+/* ==========================================
    MOONLIGHT GARDEN
    SCRIPT.JS
    PART 1
