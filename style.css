@@ -2935,3 +2935,740 @@ body{
     filter:
 
     drop-shadow(0 0 
+               /* ==========================================
+   PART 3
+   FIREFLIES + PETALS + AMBIENT EFFECTS
+========================================== */
+
+/* ===========================
+   Fireflies
+=========================== */
+
+#fireflies{
+
+    position:absolute;
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+}
+
+.firefly{
+
+    position:absolute;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#fff6a8;
+
+    box-shadow:
+    0 0 10px #fff8b0,
+    0 0 25px #fff6a8;
+
+    animation:
+    floatFirefly 10s linear infinite,
+    blinkFirefly 2.5s ease-in-out infinite;
+
+}
+
+/* ===========================
+   Falling Petals
+=========================== */
+
+#petals{
+
+    position:absolute;
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+}
+
+.petal{
+
+    position:absolute;
+
+    width:14px;
+    height:20px;
+
+    border-radius:
+    50% 50% 50% 0;
+
+    background:#ffd6e5;
+
+    opacity:.85;
+
+    transform:rotate(25deg);
+
+    animation:
+    petalFall linear infinite;
+
+}
+
+/* ===========================
+   Moon Glow
+=========================== */
+
+#moon::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-40px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+    rgba(255,255,255,.35),
+    transparent 70%);
+
+    animation:
+    moonGlow 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+   Mist
+=========================== */
+
+#garden::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    height:220px;
+
+    background:
+    linear-gradient(
+    rgba(255,255,255,.08),
+    transparent);
+
+    filter:blur(18px);
+
+    pointer-events:none;
+
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes blinkFirefly{
+
+    0%,100%{
+
+        opacity:.25;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes floatFirefly{
+
+    0%{
+
+        transform:
+        translate(0,0);
+
+    }
+
+    25%{
+
+        transform:
+        translate(35px,-40px);
+
+    }
+
+    50%{
+
+        transform:
+        translate(-20px,-80px);
+
+    }
+
+    75%{
+
+        transform:
+        translate(30px,-130px);
+
+    }
+
+    100%{
+
+        transform:
+        translate(0,-180px);
+
+    }
+
+}
+
+@keyframes petalFall{
+
+    from{
+
+        transform:
+        translateY(-120px)
+        rotate(0deg);
+
+    }
+
+    to{
+
+        transform:
+        translateY(120vh)
+        rotate(720deg);
+
+    }
+
+}
+
+@keyframes moonGlow{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.55;
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        opacity:.9;
+
+    }
+
+}
+   /* ==========================================
+   PART 4
+   PREMIUM GARDEN LAYOUT
+========================================== */
+
+/* ===========================
+   LILY POSITIONS
+=========================== */
+
+#lilyGarden .flower:nth-child(1){
+
+    transform:scale(.78);
+
+    margin-top:70px;
+
+    animation:
+    flowerSwing 5.5s ease-in-out infinite;
+
+}
+
+#lilyGarden .flower:nth-child(2){
+
+    transform:scale(1.08);
+
+    margin-top:0;
+
+    animation:
+    flowerSwing 6.5s ease-in-out infinite;
+
+}
+
+#lilyGarden .flower:nth-child(3){
+
+    transform:scale(.92);
+
+    margin-top:40px;
+
+    animation:
+    flowerSwing 5.8s ease-in-out infinite;
+
+}
+
+/* ===========================
+   RAJANIGANDHA
+=========================== */
+
+#rajanigandhaGarden .flower:nth-child(1){
+
+    transform:scale(.95);
+
+    animation:
+    flowerSwing 6s ease-in-out infinite;
+
+}
+
+#rajanigandhaGarden .flower:nth-child(2){
+
+    transform:scale(1.15);
+
+    margin-top:-40px;
+
+    animation:
+    flowerSwing 7s ease-in-out infinite;
+
+}
+
+/* ===========================
+   FLOWER GLOW
+=========================== */
+
+.flower{
+
+    transition:.4s;
+
+    filter:
+
+    drop-shadow(0 0 10px rgba(255,255,255,.18))
+    drop-shadow(0 0 25px rgba(255,210,230,.22));
+
+}
+
+.flower:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   GRASS OVERLAY
+=========================== */
+
+#grass::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+    90deg,
+
+    transparent 0px,
+
+    transparent 8px,
+
+    rgba(255,255,255,.03) 9px,
+
+    transparent 10px
+
+    );
+
+    opacity:.5;
+
+}
+
+/* ===========================
+   GARDEN LIGHT
+=========================== */
+
+#garden::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-180px;
+
+    transform:translateX(-50%);
+
+    width:900px;
+
+    height:500px;
+
+    background:
+
+    radial-gradient(
+
+    rgba(255,235,245,.15),
+
+    transparent 72%
+
+    );
+
+    pointer-events:none;
+
+}
+
+/* ===========================
+   CHARACTER SHADOW
+=========================== */
+
+#sumu,
+#shanto{
+
+    filter:
+
+    drop-shadow(0 18px 18px rgba(0,0,0,.35));
+
+}
+
+/* ===========================
+   FLOWER ANIMATION
+=========================== */
+
+@keyframes flowerSwing{
+
+    0%{
+
+        transform:
+        rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:
+        rotate(1.5deg);
+
+    }
+
+    50%{
+
+        transform:
+        rotate(-1.5deg);
+
+    }
+
+    75%{
+
+        transform:
+        rotate(1deg);
+
+    }
+
+    100%{
+
+        transform:
+        rotate(0deg);
+
+    }
+
+}
+   /* ==========================================
+   PART 5
+   CINEMATIC ROMANTIC EFFECTS
+========================================== */
+
+/* ===========================
+   SHOOTING STAR
+=========================== */
+
+.shooting-star{
+
+    position:absolute;
+
+    width:180px;
+    height:2px;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,.95)
+    );
+
+    border-radius:50px;
+
+    box-shadow:
+        0 0 12px #ffffff;
+
+    opacity:0;
+
+    animation:
+        shootingStar 8s linear infinite;
+
+}
+
+/* ===========================
+   BUTTERFLIES
+=========================== */
+
+#butterflies{
+
+    position:absolute;
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+.butterfly{
+
+    position:absolute;
+
+    width:34px;
+    height:34px;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255,180,220,.55));
+
+    animation:
+        butterflyFly 12s linear infinite;
+
+}
+
+/* ===========================
+   FLOATING FOG
+=========================== */
+
+#fog{
+
+    position:absolute;
+
+    left:-20%;
+    bottom:0;
+
+    width:140%;
+    height:240px;
+
+    background:
+        radial-gradient(
+            rgba(255,255,255,.12),
+            transparent 70%
+        );
+
+    filter:blur(30px);
+
+    opacity:.55;
+
+    animation:
+        fogMove 28s ease-in-out infinite;
+
+}
+
+/* ===========================
+   PARALLAX
+=========================== */
+
+#sky{
+
+    animation:
+        skyFloat 30s ease-in-out infinite;
+
+}
+
+#grass{
+
+    animation:
+        grassFloat 10s ease-in-out infinite;
+
+}
+
+/* ===========================
+   CHARACTER GLOW
+=========================== */
+
+#sumu{
+
+    animation:
+        breathe 4s ease-in-out infinite;
+
+}
+
+#shanto{
+
+    transition:
+        left 2.5s ease,
+        opacity 1.5s ease;
+
+}
+
+/* ===========================
+   KEYFRAMES
+=========================== */
+
+@keyframes shootingStar{
+
+    0%{
+
+        transform:
+            translate(-200px,-120px)
+            rotate(-25deg);
+
+        opacity:0;
+
+    }
+
+    8%{
+
+        opacity:1;
+
+    }
+
+    18%{
+
+        transform:
+            translate(120vw,65vh)
+            rotate(-25deg);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes butterflyFly{
+
+    0%{
+
+        transform:
+            translate(0,0)
+            rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:
+            translate(60px,-45px)
+            rotate(8deg);
+
+    }
+
+    50%{
+
+        transform:
+            translate(120px,-10px)
+            rotate(-6deg);
+
+    }
+
+    75%{
+
+        transform:
+            translate(60px,40px)
+            rotate(5deg);
+
+    }
+
+    100%{
+
+        transform:
+            translate(0,0)
+            rotate(0deg);
+
+    }
+
+}
+
+@keyframes fogMove{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    50%{
+
+        transform:translateX(-8%);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes skyFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes grassFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(3px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes breathe{
+
+    0%{
+
+        transform:
+            scale(1);
+
+    }
+
+    50%{
+
+        transform:
+            scale(1.012);
+
+    }
+
+    100%{
+
+        transform:
+            scale(1);
+
+    }
+
+}
+   
