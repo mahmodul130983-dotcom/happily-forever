@@ -1238,4 +1238,236 @@ rx="90"
 ry="18"
 fill="#FFF7FA"
 opacity=".18"/>
+  <!-- ==========================================
+     PART 8
+     ANIMATION READY
+========================================== -->
+
+<!-- Character Root -->
+<g id="sumuCharacter">
+
+    <!-- Breathing Anchor -->
+    <g id="bodyBreath"></g>
+
+    <!-- Hair Animation Anchor -->
+    <g id="hairSwing"></g>
+
+    <!-- Dress Animation Anchor -->
+    <g id="dressFlow"></g>
+
+    <!-- Bouquet Animation Anchor -->
+    <g id="bouquetMove"></g>
+
+</g>
+
+<!-- Hair Shine -->
+<ellipse
+cx="210"
+cy="82"
+rx="42"
+ry="8"
+fill="#FFFFFF"
+opacity=".12"/>
+
+<!-- Romantic Glow -->
+<radialGradient id="loveGlow">
+
+    <stop offset="0%"
+          stop-color="#FFD7E5"
+          stop-opacity=".55"/>
+
+    <stop offset="100%"
+          stop-color="#FFD7E5"
+          stop-opacity="0"/>
+
+</radialGradient>
+
+<circle
+cx="210"
+cy="255"
+r="165"
+fill="url(#loveGlow)"
+opacity=".45"/>
+
+<!-- Floating Sparkles -->
+
+<g id="sparkles"
+fill="#FFFFFF">
+
+<circle cx="125" cy="130" r="1.6"/>
+<circle cx="295" cy="165" r="1.4"/>
+<circle cx="108" cy="315" r="1.8"/>
+<circle cx="308" cy="365" r="1.5"/>
+<circle cx="175" cy="505" r="1.6"/>
+<circle cx="245" cy="548" r="1.5"/>
+
+</g>
+
+<!-- Romantic Hearts -->
+
+<g id="hearts"
+opacity=".8">
+
+<path
+d="
+M130 95
+C126 88 118 89 118 98
+C118 105 130 113 130 113
+C130 113 142 105 142 98
+C142 89 134 88 130 95
+"
+fill="#FF7AA8"/>
+
+<path
+d="
+M286 120
+C282 113 274 114 274 123
+C274 130 286 138 286 138
+C286 138 298 130 298 123
+C298 114 290 113 286 120
+"
+fill="#FF7AA8"/>
+
+</g>
+
+<!-- Soft Shadow -->
+
+<ellipse
+cx="210"
+cy="688"
+rx="85"
+ry="16"
+fill="#000000"
+opacity=".08"/>
+  <!-- ==========================================
+     PART 9
+     ULTRA PREMIUM FINISH
+========================================== -->
+
+<!-- Character Group -->
+<g id="sumuFinal">
+
+  <!-- Soft Aura -->
+  <ellipse
+      cx="210"
+      cy="320"
+      rx="185"
+      ry="305"
+      fill="#FFF8FC"
+      opacity=".04"/>
+
+  <!-- Face Highlight -->
+  <ellipse
+      cx="210"
+      cy="120"
+      rx="36"
+      ry="42"
+      fill="#FFFFFF"
+      opacity=".15"/>
+
+</g>
+
+<!-- Hair Shine -->
+<path
+d="
+M175 72
+Q210 52 245 72
+"
+fill="none"
+stroke="#A97C67"
+stroke-width="3"
+opacity=".45"/>
+
+<!-- Extra Hair Strands -->
+<path
+d="M160 120
+Q150 250 175 430"
+fill="none"
+stroke="#2C1C16"
+stroke-width="2"
+stroke-linecap="round"
+opacity=".45"/>
+
+<path
+d="M260 120
+Q270 250 245 430"
+fill="none"
+stroke="#2C1C16"
+stroke-width="2"
+stroke-linecap="round"
+opacity=".45"/>
+
+<!-- Dress Glitter -->
+<g fill="#FFFFFF" opacity=".85">
+
+<circle cx="175" cy="260" r="1.5"/>
+<circle cx="235" cy="300" r="1.3"/>
+<circle cx="190" cy="380" r="1.4"/>
+<circle cx="250" cy="445" r="1.5"/>
+<circle cx="210" cy="520" r="1.6"/>
+
+</g>
+
+<!-- Floating Petals -->
+<g opacity=".8">
+
+<ellipse
+cx="120"
+cy="180"
+rx="3"
+ry="6"
+fill="#FFD8E6"
+transform="rotate(-20 120 180)"/>
+
+<ellipse
+cx="305"
+cy="210"
+rx="3"
+ry="6"
+fill="#FFEAF2"
+transform="rotate(25 305 210)"/>
+
+<ellipse
+cx="150"
+cy="470"
+rx="3"
+ry="6"
+fill="#FFD8E6"
+transform="rotate(-15 150 470)"/>
+
+<ellipse
+cx="280"
+cy="520"
+rx="3"
+ry="6"
+fill="#FFEAF2"
+transform="rotate(20 280 520)"/>
+
+</g>
+
+<!-- Magic Stars -->
+<g
+stroke="#FFFFFF"
+stroke-width="1"
+opacity=".75">
+
+<path d="M110 110 L110 120"/>
+<path d="M105 115 L115 115"/>
+
+<path d="M305 145 L305 155"/>
+<path d="M300 150 L310 150"/>
+
+<path d="M210 40 L210 50"/>
+<path d="M205 45 L215 45"/>
+
+</g>
+
+<!-- Princess Glow -->
+<ellipse
+cx="210"
+cy="340"
+rx="195"
+ry="320"
+fill="#FFFFFF"
+opacity=".02"/>
 </svg>
